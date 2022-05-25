@@ -12,11 +12,11 @@ const controller = {
         try {
 
             const equipos = await EquipoRotativo.findAll()
-            //return res.send(equipos)
+            return res.json(equipos)
 
             return res.render('lista-equipo', { equipos })
         } catch (error) {
-            return res.send(error)
+            return res.send(error)``
 
         }
 
@@ -77,6 +77,8 @@ const controller = {
 
         //return res.send(equipoRotativo)
         await EquipoRotativo.create(equipoRotativo)
+        return res.send('creado con exito')
+
         return res.redirect('/equipo-rotativo')
 
 
@@ -92,7 +94,7 @@ const controller = {
             // const categories = await Category.findAll()
             const equipoRotativo = await EquipoRotativo.findByPk(id)
 
-            //return res.send(equipoRotativo)
+            return res.json(equipoRotativo)
             return res.render('edit-equipo', { equipoRotativo })
 
         } catch (error) {

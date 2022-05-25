@@ -1,6 +1,7 @@
 const express = require('express')
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 const path = require('path');
+const cors = require('cors')
 
 const routerLogin = require('./routes/routerLogin')
 const routerEquipoRotativo = require('./routes/routerEquipoRotativo')

@@ -1,6 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
+
+
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+       navigate('/',{
+           replace: true
+       });
+       
+    };
+
     return (
         <>
             <div class="container my-5">
@@ -19,7 +31,7 @@ export const Login = () => {
                         </div>
 
                         <div class="form-group">
-                            <input class="btn btn-dark my-3" type="submit" value="Login" />
+                            <input class="btn btn-dark my-3" type="submit" value="Login" onClick={handleLogin}/>
                         </div>
                     </form>
 

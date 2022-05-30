@@ -5,6 +5,7 @@ import { EquipoRotativoAdd } from '../components/EquipoRotativoAdd';
 import { EquipoRotativoEdit } from '../components/EquipoRotativoEdit';
 import { FuturasImplementaciones } from '../components/FuturasImplementaciones';
 import { NavBar } from '../components/NavBar';
+import { SearchScreen } from '../components/SearchScreen';
 
 
 
@@ -21,6 +22,7 @@ export const DashboardRoutes = () => {
                 <Route path='/herramientas' element={<FuturasImplementaciones />} />
                 <Route path='/repuestos' element={<FuturasImplementaciones />} />
                 <Route path='/servicios' element={<FuturasImplementaciones />} />
+                <Route path='/search' element={<SearchScreen />} />
 
                 <Route path='/' element={<EquipoRotativo />} />
 

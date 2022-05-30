@@ -11,6 +11,7 @@ const equipoRotativoController = require('../controllers/equipoRotativoControlle
 
 /*** GET ALL PRODUCTS ***/
 router.get('/', equipoRotativoController.index);
+router.get('/:id', equipoRotativoController.detail);
 
 // /*** CREATE ONE PRODUCT ***/ 
 router.get('/add-equipo', equipoRotativoController.create);

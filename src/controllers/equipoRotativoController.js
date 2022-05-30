@@ -37,8 +37,8 @@ const controller = {
         try {
 
             const { id } = req.params;
-            const product = await Product.findByPk(id)
-            res.render('detail', { product, toThousand })
+            const equipoRotativo = await EquipoRotativo.findByPk(id)
+            return res.json(equipoRotativo)
 
         } catch (error) {
             return res.send(error)

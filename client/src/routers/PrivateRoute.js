@@ -5,6 +5,7 @@ import { AuthContext } from '../components/auth/authContext';
 
 export const PrivateRoute = ({ children }) => {
 
+    //children tiene todas las rutas hijas
     const {user} = useContext(AuthContext);
     const {pathname, search} = useLocation();
 

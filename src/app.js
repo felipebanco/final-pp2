@@ -4,7 +4,7 @@ const path = require('path');
 const cors = require('cors')
 
 const routerLogin = require('./routes/routerLogin')
-const routerEquipoRotativo = require('./routes/routerEquipoRotativo')
+const routerOferta = require('./routes/routerOferta')
 const app = express();
 
 
@@ -16,7 +16,7 @@ app.use(methodOverride('_method'));
 
 
 app.use('/', routerLogin);
-app.use('/equipo-rotativo', routerEquipoRotativo);
+app.use('/oferta', routerOferta);
 
 
 

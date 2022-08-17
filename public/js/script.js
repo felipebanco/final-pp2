@@ -1,4 +1,4 @@
-function counter() {
+/* function counter() {
   let countdown = 5;
 
   let timerDiv = document.getElementById("timer");
@@ -12,7 +12,7 @@ function counter() {
     }
   }, 1000);
 }
-function counterProducto() {
+function counterOferta() {
   let countdown = 0;
 
   let timerDiv = document.getElementById("timer");
@@ -22,7 +22,7 @@ function counterProducto() {
     
     if (countdown === 0) {
       clearInterval(timer);
-      window.location.href = "./lista-producto"
+      window.location.href = "./lista-oferta"
     }
   }, 1000);
 }
@@ -69,6 +69,6 @@ $(document).ready(function () {
           
       ],
   });
-});
+})
 
-
+ */
